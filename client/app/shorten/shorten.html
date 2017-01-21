@@ -11,16 +11,15 @@
   <div id='container'>
       
     <form ng-submit='addLink()'>
-        <input class='text' type='text' name='url' ng-model='link.url'>
+        <input class='text' type='text' name='url' ng-model='link.url' ng-keypress='isValidUrl(link.url)'>
+        <!-- onkeypress listening="checkURL" -->
         <button>Shorten</button>
     </form>
     <img class='spinner' src='../assets/spiffygif_46x46.gif'>
 
     <div class='message'>
       <!--  display message letting client know if valid URL -->
-
+      {{validUrl}}
     </div>
   </div>
 </div>
-
-

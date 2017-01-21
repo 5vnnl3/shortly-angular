@@ -139,24 +139,23 @@ input[type=url]:focus {
   margin: 0 10px;
 }
 
-.creator {
-  height: 50px;
-}
-
-.creator form {
+#container form {
   float: left;
   height: 80px;
 }
 
-.creator img.spinner {
+#container img.spinner {
   height: 46px;
   margin-bottom: 5px;
   padding: 10px;
-  display: none;
+  /*display: none;*/
 }
 
-.creator .message {
+#container .message {
   clear: both;
+  font-weight: bold;
+  font-size: 18;
+  padding: 10px;
 }
 /*--*/
 #container {
@@ -222,24 +221,3 @@ form input[type=text], form input[type=password] {
   padding: 10px;
   margin: 0 10px;
 }
-
-.creator {
-  height: 50px;
-}
-
-.creator form {
-  float: left;
-  height: 80px;
-}
-
-.creator img.spinner {
-  height: 46px;
-  margin-bottom: 5px;
-  padding: 10px;
-  display: none;
-}
-
-.creator .message {
-  clear: both;
-}
-
