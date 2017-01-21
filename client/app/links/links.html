@@ -9,7 +9,11 @@
     <!-- create logout functionality -->
   </div>
   <div>
-  <div class='link' ng-repeat='link in data.links'>
+  <form >
+      <input class='text' type='text' name='url' ng-model='keywords' ng-keypress='filterLinks(link.search)'>
+      <!-- onkeypress listening="checkURL" -->
+  </form>
+  <div class='link' ng-repeat="link in data.links | filter: keywords | orderBy:'-visits'">
     <img src='../assets/redirect_icon.png'/>
     <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
     <div class='title'>{{link.title}}</div>
