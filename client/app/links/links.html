@@ -5,11 +5,10 @@
     <li><a href='#/links' class='index'>All Links</a></li>
     <li><a href='#/shorten' class='create'>Shorten</a></li>
   </ul>
-    <a href='#/logout' class='logout'>Logout</a>
+    <span ng-click='signout()' class='logout'>Logout</span>
     <!-- create logout functionality -->
   </div>
   <div>
-  {{link}}
   <div class='link' ng-repeat='link in data.links'>
     <img src='../assets/redirect_icon.png'/>
     <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
